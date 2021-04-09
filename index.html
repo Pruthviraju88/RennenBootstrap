@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <title>Kuruma-Heaven for cars</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">C.A.R.S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active "  aria-current="page" href="/"><spam class="sr-only"></span>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Types
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/jdm.html">JDM</a></li>
+              <li><a class="dropdown-item" href="/muscle.html">MUSCLE</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/others.html">Others</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/member.html" tabindex="-1">Membership </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/contact.html" tabindex="-1">Contact us </a>
+          </li> 
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">SingUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Login to C.A.R.S</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignUpModalLabel">Create account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="inputname" class="form-label">Username</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">SignUp</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="img-fluid" src="C.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to C.A.R.S</h2>
+          <p>Come Along to Race & Slide</p>
+          <button type="button" class="btn btn-success">JDM</button>
+          <button type="button" class="btn btn-danger">MUSCLE</button>
+          <button type="button" class="btn btn-dark">LUXURY</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="D.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>RATED BY GRAND TOUR</h5>
+          <button type="button" class="btn btn-success">CLASSIC</button>
+          <button type="button" class="btn btn-danger">MID-AGE</button>
+          <button type="button" class="btn btn-dark">LATEST</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="B.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Come Along to Race & Slide</h5>
+          <button type="button" class="btn btn-success">EXOTIC</button>
+          <button type="button" class="btn btn-danger">SPECIAL</button>
+          <button type="button" class="btn btn-dark">MODIFIED</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="A.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>THE CARS WE DRIVE SAY A LOT ABOUT US </h5>
+          <p></p>
+          <button type="button" class="btn btn-success">CLASSIC</button>
+          <button type="button" class="btn btn-danger">MID-AGE</button>
+          <button type="button" class="btn btn-dark">LATEST</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    <div class="container  my-4 ">
+      <div class="row mb-2">
+        <div class="col-md-6 ">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">JDM</strong>
+              <h3 class="mb-0">SUPRA Mk4</h3>
+              <div class="mb-1 text-muted">Since 1993</div>
+              <p class="card-text mb-auto">The Mk4 Supra was also powered by a 3.0-liter six-cylinder engine, but in its
+                base form it was naturally aspirated and produced just 220 hp and 210 lb-ft of torque. The iconic 2JZ
+                3.0-liter engine arrived later, producing 320 hp and 315 lb-ft of torque.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto  ">
+              <img  class="bd-placeholder-img-fluid" width="200" height="250" src="2.jpg.jpg" alt=" ">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-relative">
+              <strong class="d-inline-block mb-2 text-success">MUSCLE</strong>
+              <h3 class="mb-0">DODGE CHALLENGER SRT</h3>
+              <div class="mb-1 text-muted">Since 1970</div>
+              <p class="mb-auto">A supercharged HEMI 6.2-liter V8 engine does duty in every SRT Hellcat-badged
+                Challenger, but in different states of tune. In the regular SRT Hellcat, peak outputs are 717 hp and 656
+                lb-ft of torque .For more info check dodge official websiite. </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto">
+              <img class="bd-placeholder-img-fluid"  width="200" height="250"  src="4.jpg.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      <div class="container ">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-relative ">
+                <strong class="d-inline-block mb-2 text-primary">JDM</strong>
+                <h3 class="mb-0">GTR R34 , R35</h3>
+                <div class="mb-1 text-muted">Since 1999</div>
+                <p class="mb-auto">The legendary Nissan GT-R is a supercar with gut-punch acceleration, but
+                  its shine has started to fade—it's been around for more than 10 years with relatively few updates—and
+                  today more desirable supercars exist at the same price point. It's powered by a twin-turbo V-6 engine
+                  that pumps out 565 or 600 horsepower depending on which model you choose. All-wheel drive is standard,
+                  and the GT-R offers tenacious handling to go along with its explosive acceleration. </p>
+                <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+              <div class="col-auto">
+                <img   class="bd-placeholder-img-fluid" width="200" height="250" src="3.jpg.jpg" alt=" ">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-relative ">
+                <strong class="d-inline-block mb-2 text-danger">OFF-ROADER</strong>
+                <h3 class="mb-0">JEEP WRANGLER</h3>
+                <div class="mb-1 text-muted">Since 1986</div>
+                <p class="mb-auto">Wrangler is the introduction of two new powertrains: The plug-in hybrid 4xe and the
+                  fire-breathing, 470-hp V-8 in the new Rubicon 392. The electrified setup pairs a turbocharged
+                  four-cylinder with an electric motor for a stout 375-hp combined output. In addition to the extra
+                  electric power, the 4xe powertrain is also set to deliver up to 25 miles of electric-only driving and
+                  a claimed zero-to-60-mph time of 6.0 seconds. The 4xe system will be available only on four-door
+                  Unlimited models . </p>
+                <a href="#" class="stretched-link">Continue reading</a>
+              </div>
+              <div class="col">
+                <img   class="bd-placeholder-img-fluid " width="200" height="250" src="Ff.jpg" alt=" ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2021–2022 C.A.R.S, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
